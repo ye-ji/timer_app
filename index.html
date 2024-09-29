@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타이머</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 100px;
+    }
+    #timer {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      width: 150px;
+      height: 100px;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="timer">1:00</div>
+  <div class="button-container">
+    <button id="pauseButton">일시정지</button>
+    <button id="startButton">타이머 시작</button>
+  </div>
+
+  <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
